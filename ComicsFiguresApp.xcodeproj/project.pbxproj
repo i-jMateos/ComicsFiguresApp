@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CF0099582E2A77F600C77DD2 /* ComicsFiguresApp.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = CF0099572E2A77F600C77DD2 /* ComicsFiguresApp.entitlements */; };
+		CF0099F12E2E0A1C00C77DD2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CF0099F02E2E0A1C00C77DD2 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CF008FA22E285D1B00C77DD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		CF008F932E285D1A00C77DD2 /* ComicsFiguresApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicsFiguresApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF008FA12E285D1B00C77DD2 /* ComicsFiguresAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComicsFiguresAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF008FAB2E285D1B00C77DD2 /* ComicsFiguresAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComicsFiguresAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0099572E2A77F600C77DD2 /* ComicsFiguresApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ComicsFiguresApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +51,36 @@
 			path = ComicsFiguresAppUITests;
 			sourceTree = "<group>";
 		};
+		CF008FC82E285D7900C77DD2 /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF008FC92E285D8000C77DD2 /* ViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF008FCA2E285D8B00C77DD2 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF008FCB2E285D9900C77DD2 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF0098F92E296BA300C77DD2 /* MockData */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		CF0099162E29B56F00C77DD2 /* Other */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Other;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0099F12E2E0A1C00C77DD2 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +112,17 @@
 		CF008F8A2E285D1A00C77DD2 = {
 			isa = PBXGroup;
 			children = (
+				CF0099572E2A77F600C77DD2 /* ComicsFiguresApp.entitlements */,
+				CF0099162E29B56F00C77DD2 /* Other */,
+				CF0098F92E296BA300C77DD2 /* MockData */,
+				CF008FCB2E285D9900C77DD2 /* Model */,
+				CF008FCA2E285D8B00C77DD2 /* Services */,
+				CF008FC92E285D8000C77DD2 /* ViewModel */,
+				CF008FC82E285D7900C77DD2 /* View */,
 				CF008F952E285D1A00C77DD2 /* ComicsFiguresApp */,
 				CF008FA42E285D1B00C77DD2 /* ComicsFiguresAppTests */,
 				CF008FAE2E285D1B00C77DD2 /* ComicsFiguresAppUITests */,
+				CF0099EF2E2E09F900C77DD2 /* Frameworks */,
 				CF008F942E285D1A00C77DD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +135,13 @@
 				CF008FAB2E285D1B00C77DD2 /* ComicsFiguresAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CF0099EF2E2E09F900C77DD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +161,16 @@
 			);
 			fileSystemSynchronizedGroups = (
 				CF008F952E285D1A00C77DD2 /* ComicsFiguresApp */,
+				CF008FC82E285D7900C77DD2 /* View */,
+				CF008FC92E285D8000C77DD2 /* ViewModel */,
+				CF008FCA2E285D8B00C77DD2 /* Services */,
+				CF008FCB2E285D9900C77DD2 /* Model */,
+				CF0098F92E296BA300C77DD2 /* MockData */,
+				CF0099162E29B56F00C77DD2 /* Other */,
 			);
 			name = ComicsFiguresApp;
 			packageProductDependencies = (
+				CF0099F02E2E0A1C00C77DD2 /* SDWebImageSwiftUI */,
 			);
 			productName = ComicsFiguresApp;
 			productReference = CF008F932E285D1A00C77DD2 /* ComicsFiguresApp.app */;
@@ -195,6 +254,9 @@
 			);
 			mainGroup = CF008F8A2E285D1A00C77DD2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CF0099EE2E2E08E200C77DD2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CF008F942E285D1A00C77DD2 /* Products */;
 			projectDirPath = "";
@@ -212,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0099582E2A77F600C77DD2 /* ComicsFiguresApp.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +646,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF0099EE2E2E08E200C77DD2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF0099F02E2E0A1C00C77DD2 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF0099EE2E2E08E200C77DD2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF008F8B2E285D1A00C77DD2 /* Project object */;
 }

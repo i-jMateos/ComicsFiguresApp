@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@main
 struct ComicsFiguresAppApp: App {
     var body: some Scene {
         WindowGroup {

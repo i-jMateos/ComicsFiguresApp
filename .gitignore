@@ -1,0 +1,28 @@
+# Xcode
+*.xcworkspace
+*.xcuserdata
+*.xccheckout
+*.xcodeproj/project.xcworkspace/xcshareddata
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Logs
+*.log
+
+# User-specific
+*.swp
+*.swo
+*.orig
